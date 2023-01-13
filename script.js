@@ -1,152 +1,184 @@
-const bebidasComFruta = [] 
-//const somarPrecos = (bebidas[0].preco+bebidas[1].preco+bebidas[2].preco+bebidas[3].preco+bebidas[4].preco+bebidas[5].preco)/6
-const obj1 = {   
-    nome: "Pinã colada",
-    preco: 23,
-    temFruta: false,
-    ingredientes: ["rum", "suco de abacaxi", "leite de coco", "leite condensado", "gelo"],
-    imagem:"https://i.pinimg.com/originals/8e/13/d9/8e13d983b2e4f860207e4ca22d473155.gif",
-    site:"https://drinquepedia.com/drinques/historias/284"
+const jogadoresCraques = []
+const obj1 = {
+nome: "Endrick",
+idade: 16,
+posicao: "Atacante",
+timeAtual: "Palmeiras",
+pais: "Brasil",
+imagem: "https://egool.com.br/wp-content/uploads/2022/10/david-inter-ricardo-duarte-21.jpg",
+site: "https://pt.wikipedia.org/wiki/Endrick"
 }
 const obj2 = {
-    nome: "Caipirinha",
-    preco: 12,
-    temFruta: true,
-    ingredientes: ["limão", "açucar", "gelo", "cachaça"],
-    imagem:"https://media4.giphy.com/media/XEezfHTttBmnA0PGHs/200w.gif?cid=82a1493b1xl1cit2qht4ndwi4ebb665wmkpv39kkgljaxxks&rid=200w.gif&ct=g",
-    site:"https://drinquepedia.com/drinques/historias/146"
+nome: "Haaland",
+idade: 21,
+posicao: "Atacante",
+timeAtual: "Manchester City",
+pais: "Noruega",
+imagem: "https://s2.glbimg.com/zh7upOQBAVE0bUtnz0ZFpCVV3NU=/0x0:4857x3423/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2022/B/L/UtK3zwSCyQrBi2Oxm20A/haaland-getty.jpg",
+site: "https://pt.wikipedia.org/wiki/Erling_Haaland"
 }
 const obj3 = {
-    nome: "Italiana",
-    preco: 22,
-    temFruta: false,
-    ingredientes: ["vinho", "gelo", "leite condensado", "vodka"],
-    imagem:"https://c.tenor.com/PJt2lC5nWgcAAAAC/cherry-cocktail.gif",
-    site:"http://www.italialegal.com.br/conheca-a-historia-do-spritz-o-drink-mais-famoso-da-italia/"
+nome: "Mbape",
+idade: 24,
+posicao: "Atacante",
+timeAtual: "Paris Saint-Germain",
+pais: "França",
+imagem: "https://blog.kto.com/pt/wp-content/uploads/sites/2/2022/12/Kylian-Mbappe-1-696x464.jpg",
+site: "https://pt.wikipedia.org/wiki/Kylian_Mbapp%C3%A9"
 }
 const obj4 = {
-    nome: "Cosmopolitan",
-    preco: 35,
-    temFruta: true,
-    ingredientes: ["vodka", "limão", "suco de cramberry", "licor de laranja", "gelo"],
-    imagem:"https://thumbs.gfycat.com/ElatedAngryAntlion-size_restricted.gif",
-    site:"https://www.revistalide.com.br/noticias/gastronomia/cosmopolitan-a-historia-do-jovem-classico-americano"
-}
-const obj5 = {
-    nome: "Mojito",
-    preco: 15,
-    temFruta: true,
-    ingredientes: ["limão", "açucar", "hortelã", "rum branco", "gelo", "água com gás"],
-    imagem:"https://c.tenor.com/ATv9w8xVipsAAAAC/mojito-bresil.gif",
-    site:"https://drinquepedia.com/drinques/historias/24"
-}
-const obj6 = {
-    nome: "Bloody Marry",
-    preco: 26,
-    temFruta: false,
-    ingredientes: ["vodka", "suco de tomate", "suco de limão", "molho inglês", "tabaco", "pimenta"],
-    imagem:"https://media0.giphy.com/media/3o7qDWGHo2bhut6ReE/200w.gif?cid=82a1493b1tdeclkoarcoejw9c3jl1vdp5we39q6ajpdkdicz&rid=200w.gif&ct=g",
-    site:"https://saberhortifruti.com.br/bloody-mary-a-lenda-e-o-drink/"
+nome: "Bellingham",
+idade: 18,
+posicao: "Meio-campista",
+timeAtual: "Borussia Dortmund",
+pais: "Inglaterra",
+imagem: "https://images2.minutemediacdn.com/image/fetch/w_2000,h_2000,c_fit/https%3A%2F%2Ftherealchamps.com%2Fwp-content%2Fuploads%2Fgetty-images%2F2017%2F07%2F1243301538.jpeg",
+site: "https://pt.wikipedia.org/wiki/Jude_Bellingham"
 }
 
-let bebidas = []
-bebidas.push(obj1,obj2,obj3,obj4,obj5,obj6)
-//console.log(bebidas)
+jogadores.push(obj1, obj2, obj3, obj4);
 
-for (let i =0;i<bebidas.length; i++){
-    if(bebidas[i].temFruta===true){
-        bebidasComFruta.push(bebidas[i])
-    }
+console.log(jogadoresCraques);
+
+/*
+[
+{
+nome: "Endrick",
+idade: 16,
+posicao: "Atacante",
+timeAtual: "Palmeiras FC",
+pais: "Brasil",
+imagem: "https://www.psg.fr/sites/default/files/styles/image_equipe_article/public/images/2021-02/endrick-psg.jpg?itok=6pFoJgKv",
+site: "https://www.psg.fr/equipe/endrick-3"
+},
+{
+nome: "Haaland",
+idade: 21,
+posicao: "Atacante",
+timeAtual: "Borussia Dortmund",
+pais: "Noruega",
+imagem: "https://www.bvb.de/globalassets/images/players/haaland-erling-braut/2020-2021/erling-haaland-bvb-2020-2021-portrait-bvb.jpg",
+site: "https://www.bvb.de/de/teams/profis/erling-haaland"
+},
+{
+nome: "Mbape",
+idade: 24,
+posicao: "Atacante",
+timeAtual: "Paris Saint-Germain",
+pais: "França",
+imagem: "https://www.psg.fr/sites/default/files/styles/image_equipe_article/public/images/2021-02/mbappe-psg.jpg?itok=1Y0Ysc-L",
+site: "https://www.psg.fr/equipe/mbappe-7"
+},
+{
+nome: "Bellingham",
+idade: 19,
+posicao: "Meio-campista",
+timeAtual: "Borussia Dortmund",
+pais: "Inglaterra",
+imagem: "https://www.bvb.de/globalassets/images/players/bellingham-jude/2020-2021/jude-bellingham-bvb-2020-2021-portrait-bvb.jpg",
+site: "https://www.bvb.de/de/teams/profis/jude-bellingham"
+}
+]
+*/
+
+let jogadoresCraque = []
+jogadoresCraques.push(obj1,obj2,obj3,obj4)
+
+for (let i =0;i<jogadoresCraques.length; i++){
+if(jogadoresCraques[i].pais==="Brasil"){
+jogadoresBrasileiros.push(jogadoresCraques[i])
+}
 }
 
-for(let i=0;i< bebidas.length;i++){
-    console.log(bebidas[i].ingredientes.toString())  
+for(let i=0;i< jogadoresCraques.length;i++){
+console.log(jogadoresCraques[i].posicao)
 }
 
-
-function bebidasRelatorio(objeto){
-    console.log(`Nome:${objeto.nome.toUpperCase()}\nPreço:${objeto.preco}\nTem Fruta?${objeto.temFruta ?"sim":"não"}\nQuais os Ingredientes?${objeto.ingredientes}\n`)
+function jogadoresRelatorio(objeto){
+console.log(`Nome:${objeto.nome.toUpperCase()}\nIdade:${objeto.idade}\nPosição:${objeto.posicao}\nTime Atual:${objeto.timeAtual}\nPaís:${objeto.pais}\n`)
 }
-for (let i=0;i<bebidas.length;i++){
-    bebidasRelatorio(bebidas[i]);
+for (let i=0;i<jogadoresCraques.length;i++){
+jogadoresRelatorio(jogadoresCraques[i]);
 };
 
-
-function buscarBebidas (bebidas){
-    const nome = prompt("Digite o nome do seu drink").toUpperCase()
-    let objeto = bebidas.filter(
-        bebida=>{
-            return bebida.nome.toUpperCase().includes(nome)
-        }
-    )
-    if(objeto.length===0){
-        alert("item não encontrado!")
-    }else{
-        console.log("Achouuu!!!!")
-        return objeto
-    }
+function buscarJogadores (jogadoresCraques){
+const nome = prompt("Digite o nome do jogador").toUpperCase()
+let objeto = jogadoresCraques.filter(
+jogador=>{
+return jogador.nome.toUpperCase().includes(nome)
 }
-//buscarBebidas(bebidas)
+)
+if(objeto.length===0){
+alert("Jogador não encontrado!")
+}else{
+console.log("Achouuu!!!!")
+return objeto
+}
+}
+
 
 
 function criarCard (obj){
     const card = document.createElement("div")
-    const imgProd = document.createElement("img")
-    const nomeProd = document.createElement("a")
+    const imagem = document.createElement("img")
+    const nome = document.createElement("a")
     const dados = document.createElement("ul")
-    const preco = document.createElement("li")
-    const fruta = document.createElement("li")
-    const ingredientes = document.createElement("li")
+    const idade = document.createElement("li")
+    const posicao = document.createElement("li")
+    const timeAtual = document.createElement("li")
+    const pais = document.createElement("li")
 
-    imgProd.src = obj.imagem
-    nomeProd.innerText = obj.nome
-    nomeProd.href = obj.site
-    nomeProd.target = "_blank"
-    preco.innerText = `Preço : R$${obj.preco}`
-    fruta.innerText = `Tem fruta? ${obj.temFruta? "Sim" : "Não"}`
-    ingredientes.innerText = `Ingredientes: ${obj.ingredientes.toString(" ")}`
-
+    imagem.src = obj.imagem
+    nome.innerText = obj.nome
+    nome.href = obj.site
+    nome.target = "_blank"
+    idade.innerText = `Idade : ${obj.idade}`
+    posicao.innerText = `Posição: ${obj.posicao}`
+    timeAtual.innerText = `Time Atual: ${obj.timeAtual}`
+    pais.innerText = `País: ${obj.pais}`
+    
     card.className = "card"
     dados.className = "texto"
      
-    dados.append(nomeProd, preco, fruta, ingredientes)
-    card.append(imgProd, dados)
-
+    dados.append(nome, idade, posicao, timeAtual, pais)
+    card.append(imagem, dados)
+    
     return card
+    
 }
+
 
 function renderizarProds (list) {
     const secaoProds = document.getElementById("secaoProds")
     secaoProds.innerHTML = ""
     console.log(list)
-
     list.forEach(produto => {
-        const cardProdCriado = criarCard(produto)
+        const cardProdCriado = criarCard(jogadoresCraques)
         secaoProds.appendChild(cardProdCriado)
     })
+    
 }
 
-renderizarProds(bebidas)
+renderizarProds(jogadoresCraques)
 
-function pesquisarBebidas() {
+
+function pesquisarJogadores() {
     const inputPesquisa = document.getElementById("txtBusca")
     const botaoPesquisa = document.getElementById("btnBusca")
 
     botaoPesquisa.addEventListener("click", () => {
-        const valor = inputPesquisa.value
-        
-        const filtro = bebidas.filter(produto => produto.nome === valor)
-        console.log(filtro)
+        const valor = inputPesquisa.value.toUpperCase()
+        let filtro = jogadoresCraques.filter(jogador => jogador.nome.toUpperCase().includes(valor))
         
         if(filtro.length) {
             renderizarProds(filtro)
         } else {
-            renderizarProds(bebidas)
-            alert("Produto não encontrado")
+            alert("Jogador não encontrado")
         }
     })
 }
 
-pesquisarBebidas()
+pesquisarJogadores()
+
 
 
