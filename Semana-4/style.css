@@ -39,7 +39,7 @@ section{
     height: 40vh;
 }
 
-#dadosArtista{
+#dadosFilme{
     display:flex;
     flex-direction: column;
     align-items: center;
@@ -79,12 +79,6 @@ footer{
     background-color: black;
     height: 8vh;   
 }
-
-/* #redes { 
-    display: flex;
-    flex-direction: row;
-} */
-
 
 .info{
     align-self: center;

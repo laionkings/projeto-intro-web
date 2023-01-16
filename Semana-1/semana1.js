@@ -1,57 +1,48 @@
-// *****SEMANA 1*****
-//lista de cantores
-//1. Características:
-// nome do artista, nome do album, ano de lançamento do album, é artista nacional?
-//2. Agora, crie três conjuntos de variáveis utilizando as características que você definiu acima. Lembre-se que deve ser o mesmo tipo de item, com três conjuntos de dados diferentes.
-const nomeArtista1 = ('Justin Bieber')
-const nomeAlbum1 = ('Justice')
-const anoLancamentoAlbum1 = 2021
-const artistaNacional1 = false
+const nomeFilme1 = ('Matrix')
+const nomeDiretor1 = ('Lana Wachowski')
+const anoLancamentoFilme1 = 1999
+const generoFilme1 = ('Sci-Fi')
 
-const nomeArtista2 = ('Henrique e Juliano')
-const nomeAlbum2 = ('Manifesto Musical(Ao Vivo)')
-const anoLancamentoAlbum2 = 2022
-const artistaNacional2 = true
+const nomeFilme2 = ('Vingadores: Ultimato')
+const nomeDiretor2 = ('Anthony e Joe Russo')
+const anoLancamentoFilme2 = 2019
+const generoFilme2 = ('Ação')
 
-const nomeArtista3 = ('Linkin Park')
-const nomeAlbum3 = ('Minutes to Midnight')
-const anoLancamentoAlbum3 = 2017
-const artistaNacional3 = false
+const nomeFilme3 = ('The Shawshank Redemption')
+const nomeDiretor3 = ('Frank Darabont')
+const anoLancamentoFilme3 = 1994
+const generoFilme3 = ('Drama')
 
-//3. Faça um cálculo de média, entre os valores numéricos respectivos de cada item. Imprima o valor da média utilizando um console.log. Guarde este valor em uma const;
-const media = (anoLancamentoAlbum1 + anoLancamentoAlbum2 + anoLancamentoAlbum3) / 3
-console.log (`O valor da média dos valores numéricos é ${media};
+
+
+const media = (anoLancamentoFilme1 + anoLancamentoFilme2 + anoLancamentoFilme3) / 3
+console.log (`A média dos anos de lançamento dos filmes é ${media}`);
+
+console.log (`
+Todos os filmes são de gênero de ação? 
+${generoFilme1 === "Ação" && generoFilme2 === "Ação" && generoFilme3 === "Ação"}
 `)
 
-//4. Com um console.log, imprima o resultado de uma operação lógica que checa se todos os valores de variáveis booleanas criadas até aqui são verdadeiras.
+const filmesPreferidos = ["Matrix", "Vingadores: Ultimato", "The Shawshank Redemption"]
+
+
 console.log (`
-Todos os valores de variáveis booleanas(artista nacional) criadas até aqui são verdadeiras? 
-${artistaNacional1 && artistaNacional2 && artistaNacional3 === true};
+Nome do Filme:${nomeFilme1.toUpperCase()};
+Nome do Diretor:${nomeDiretor1};
+Ano de Lançamento do Filme: ${anoLancamentoFilme1};
+Genero do Filme: ${generoFilme1};
 `)
 
-//5. Crie pelo menos mais uma característica para o item que você criou. Esta característica deve ser um array. Mantenha o tipo de dado do array criado sempre o mesmo, isto é, se é um array de strings, só deve receber strings.
-const musicasPreferidasAlbum1 = ["2 Much", "Hold On", "Somebody"]
-const musicasPreferidasAlbum2 = ["Arranhão", "A Maior Saudade", "Evento Cancelado"]
-const musicasPreferidasAlbum3 = ["Leave Out All The Rest", "Bleed It Out", "Shadow Of The Day"]
-
-//6. Exiba um relatório utilizando console.log(), mostrando todos os dados de cada um dos itens criados até aqui
 console.log (`
-Nome do Artista:${nomeArtista1.toUpperCase()};
-Nome do Álbum:${nomeAlbum1};
-Ano de Lançamento do Album: ${anoLancamentoAlbum1};
-Artista é nacional? ${artistaNacional1};
-Músicas Preferidas do Album: ${musicasPreferidasAlbum1}.`)
+Nome do Filme:${nomeFilme2.toUpperCase()};
+Nome do Diretor:${nomeDiretor2};
+Ano de Lançamento do Filme: ${anoLancamentoFilme2};
+Genero do Filme: ${generoFilme2};
+`)
 
 console.log (`
-Nome do Artista:${nomeArtista2.toUpperCase()};
-Nome do Álbum:${nomeAlbum2};
-Ano de Lançamento do Album: ${anoLancamentoAlbum2};
-Artista é nacional? ${artistaNacional2};
-Músicas Preferidas do Album: ${musicasPreferidasAlbum2}.`)
-
-console.log (`
-Nome do Artista:${nomeArtista3.toUpperCase()};
-Nome do Álbum:${nomeAlbum3};
-Ano de Lançamento do Album: ${anoLancamentoAlbum3};
-Artista é nacional? ${artistaNacional3}
-Músicas Preferidas do Album: ${musicasPreferidasAlbum3}.`)
+Nome do Filme:${nomeFilme3.toUpperCase()};
+Nome do Diretor:${nomeDiretor3};
+Ano de Lançamento do Filme: ${anoLancamentoFilme3};
+Genero do Filme: ${generoFilme3};
+`)
