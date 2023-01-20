@@ -16,39 +16,34 @@ header {
   justify-content: center;
 }
 
-/* estilo para o container de cada jogador */
-/* estilo para a imagem */
-.jogador-container img.thumbnail {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  object-fit: cover;
+.container {
+background-image: url(https://img.wallpapic-br.com/i1090-741-925/medium/posteres-de-futebol-azuis-estadio-mundo-imagem-de-fundo.jpg);
+object-fit: cover;
+background-position: center;
+justify-content: center;
+align-items: center;
 }
 
-
-/* estilo para a imagem */
-.jogador-container img {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
+#secaoProds {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-/* estilo para os textos */
-.jogador-container .text-container {
-  flex: 1;
-  margin-left: 20px;
+#jogadores-container {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+
 }
 
-/* estilo para o título */
-.jogador-container h2 {
-  font-size: 22px;
-  margin-bottom: 10px;
-}
-
-/* estilo para o link "Saiba mais" */
-.jogador-container a {
-  color: blue;
-  text-decoration: none;
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 
