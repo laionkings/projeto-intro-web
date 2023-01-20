@@ -18,14 +18,12 @@ header {
 }
 
 .container {
-background-image: url(./Semana-4/assets/d69910dd50206e2fd525cf81382789d7.jpeg);
-object-fit: cover;
-background-size: cover; /* cobre toda a tela */
-background-position: center; /* centraliza a imagem */
-object-fit: cover;
-padding-top: 40px;
-overflow-y: scroll;
-
+  background-image: url(./Semana-4/assets/d69910dd50206e2fd525cf81382789d7.jpeg);
+  object-fit: cover;
+  background-size: cover; /* cobre toda a tela */
+  background-position: center; /* centraliza a imagem */
+  object-fit: cover;
+  padding-top: 40px;
 }
 
 #secaoProds {
@@ -34,14 +32,15 @@ overflow-y: scroll;
   justify-content: center;
 }
 
-p, h2 {
+p,
+h2 {
   color: rgb(255, 255, 255);
 }
 
 #jogadores-container img {
   display: inline-block; /* alinha as imagens na tela */
   width: 200px; /* define o tamanho das imagens */
-  height: 200px; 
+  height: 200px;
   object-fit: cover;
   object-position: center;
   margin: 50px;
@@ -54,9 +53,7 @@ p, h2 {
   height: 200px; /* define o tamanho das imagens */
   border: 1px solid rgb(10, 10, 10); /* adiciona borda à imagem */
   padding: 10px; /* adiciona espaço interno à imagem */
-  
 }
-
 
 footer {
   position: fixed; /* fixa o elemento na posição */
@@ -65,7 +62,6 @@ footer {
   width: 100%; /* define a largura do elemento */
 }
 
-
 @media (max-width: 320px) {
   header {
     width: 313px;
@@ -73,7 +69,6 @@ footer {
   header > h1 {
     font-size: 40px;
   }
-
 
   #divBusca {
     margin-inline-start: 3px;
