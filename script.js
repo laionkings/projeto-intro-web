@@ -47,12 +47,13 @@ function renderizarProds(array) {
   for (let i = 0; i < array.length; i++) {
     let jogador = `
       <img src="${array[i].imagem}" alt="${array[i].nome}">
+      <a href='${array[i].site}'target="_blank">Saiba mais</a>
       <h2>${array[i].nome}</h2>
       <p>Idade: ${array[i].idade}</p>
       <p>Posição: ${array[i].posicao}</p>
       <p>Time atual: ${array[i].timeAtual}</p>
       <p>País: ${array[i].pais}</p>
-      <a href="${array[i].site}">Saiba mais</a>
+      
     `;
     container.innerHTML += jogador;
   }
@@ -68,7 +69,6 @@ function pesquisarJogadores() {
     let valor = inputPesquisa.value.toUpperCase();
     let filtro = [];
     for (jogador of jogadoresCraques) {
-      
       if (jogador.nome.toUpperCase().includes(valor)) {
         filtro.push(jogador);
       }
